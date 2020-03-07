@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request
 
 class Blockchain(object):
     def __init__(self):
-        self.chain = []
+        self.chain = set()
         self.current_transactions = []
         self.nodes = set()
 
